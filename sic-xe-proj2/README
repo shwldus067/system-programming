@@ -1,0 +1,53 @@
+SIC/XE Shell project
+
+Project 1 - Shell prompt using Opcode Hash Table & Memory
+Project 2 - Assembler
+
+1. How to use:
+(1) Shell commands
+  $ h[elp] 
+    : print all the commands can be used in Shell prompt
+  $ d[ir]
+    : print files in current directory(execute_file*, directory/, others)
+  $ q[uit]
+    : quit sicsim program
+  $ hi[story]
+    : print all commands user used(the first command on the top)
+	$ type filename
+		: read and write the filename file
+
+(2) Memory commands
+  $ du[mp]
+    : print memory 10 lines(10*16 memory space)
+  $ du[mp] start
+    : print 160 Memoris from start address
+  $ du[mp] start, end
+    : print memory from start to end(start<=end)
+  $ e[dit] address, value
+    : change memory in address to value
+  $ f[ill] start, end, value
+    : fill all the memories from start to end with value
+  $ reset
+    : fill all the memories with 0
+
+(3) OPCODE table commands
+  $ opcode mnemonic
+    : print the opcode of mnemonic
+  $ opcodelist
+    : print opcode hash table
+
+(4) Assemble commands
+	$ assemble filename
+		: assemble the asm file and write the .lst file and the .obj file
+	$ symbol
+		: print the most recently made symbol table
+
+2. How to compile:
+  $ make
+
+3. How to clean the file:
+  $ make clean
+
+4. How to run:
+  $ ./20171264.out
+
